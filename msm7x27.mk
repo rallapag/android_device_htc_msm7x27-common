@@ -138,10 +138,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     media.a1026.nsForVoiceRec = 0 \
     media.a1026.enableA1026 = 1
 
-# For emmc phone storage
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.phone_storage=0
-
 # We have enough storage space to hold precise GC data
 #PRODUCT_TAGS += dalvik.gc.type-precise
 
