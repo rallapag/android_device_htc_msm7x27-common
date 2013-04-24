@@ -78,8 +78,8 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    camera.msm7x27
-#    libcamera
+    camera.msm7x27 \
+    libcamera
 
 # QCOM OMX
 PRODUCT_PACKAGES += \
