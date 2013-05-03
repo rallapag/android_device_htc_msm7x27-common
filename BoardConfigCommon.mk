@@ -37,9 +37,6 @@ TARGET_KERNEL_SOURCE := kernel/htc/msm7227
 TARGET_KERNEL_CONFIG := cyanogen_msm7227_defconfig
 TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.4.3
 
-## Copy Device Kernel Headers here if necessary, DO NOT use Android auto-generated headers
-TARGET_SPECIFIC_HEADER_PATH := device/htc/msm7x27-common/include
-
 ### USB Mass Storage
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/usb_mass_storage/lun0/file
 
@@ -74,12 +71,13 @@ TARGET_GRALLOC_USES_ASHMEM := false
 TARGET_USES_GENLOCK := true
 # Disable HW VSYNC, kernel does not support it
 TARGET_NO_HW_VSYNC := true
-#TARGET_NO_HW_OVERLAY := true
-#BOARD_NEEDS_MEMORYHEAPPMEM := true
 # Some pixel formats aren't supported. Commit used with this flag: http://goo.gl/91KJ9
 COMMON_GLOBAL_CFLAGS += -DQCOM_MISSING_PIXEL_FORMATS
 BOARD_EGL_NEEDS_LEGACY_FB := true
-TARGET_DISABLE_TRIPLE_BUFFERING := true
+
+#TARGET_NO_HW_OVERLAY := true
+#BOARD_NEEDS_MEMORYHEAPPMEM := true
+#TARGET_DISABLE_TRIPLE_BUFFERING := true
 
 
 ### Camera
