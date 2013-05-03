@@ -95,8 +95,8 @@ PRODUCT_PACKAGES += \
 # Misc
 PRODUCT_PACKAGES += \
     com.android.future.usb.accessory \
+    brcm_patchram_plus \
     Superuser
-#    brcm_patchram_plus \
 
 ### Add system daemons
 PRODUCT_PACKAGES += \
